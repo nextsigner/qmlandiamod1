@@ -1,13 +1,13 @@
 import QtQuick 2.0
-import  "../../../"
+//import  "../../../"
 Item {
     id: r
     width: app.an
     height: app.al-app.fs*2
     onVisibleChanged: {
         if(visible){
-            app.mp.source="./"+app.gitfolder+"/a1.m4a"
-            app.pa=pa
+            //app.mp.source="./"+app.gitfolder+"/a1.m4a"
+            //app.pa=pa
         }
     }
 
