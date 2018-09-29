@@ -13,7 +13,7 @@ Item {
 
     Text {
         id: tttt
-        text: "text100"
+        text: "text101"
         anchors.centerIn: r
         font.pixelSize: 30
         color:app.c2
