@@ -13,7 +13,7 @@ Item {
 
     Text {
         id: tttt
-        text: qsTr("text")
+        text: "text100"
         anchors.centerIn: r
         font.pixelSize: 30
         color:app.c2
