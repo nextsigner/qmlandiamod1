@@ -3,7 +3,7 @@ import  "../../../"
 Item {
     id: r
     width: app.an
-    height: app.al-app.fs*2   
+    height: app.al-app.fs*2
 
     //1
     Text{
@@ -131,19 +131,19 @@ Como QML es un lenguaje de programaciòn Orientado a Objetos, en este contexto d
         //Pr
         at+='Elemento Item'
         //Req
-        at+='Para utilizar este elemento '
+        at+='Para utilizar este elemento es necesario importar la librerìa QtQuick. Podemos utilizar la versiòn 1.4, 2.0 hasta 2.5. Para unik recomendamos la versiòn 2.0 '
         //Q
         at+='Es un elemento posicionador y contenedor'
         //Car
-        at+='Sus principales caracterìsticas son ejes de posicionamiento x e y, ancho, alto, opacidad y visible.'
+        at+='Sus principales caracterìsticas son ejes de posicionamiento x e y, ancho, alto, opacidad, clip y visible.'
         //PQ
-        at+='Este elemento nos permite '
+        at+='Este elemento nos permite crear un area invisible, sin bordes y con fondo transparente. Si su propiedad visible està como verdadero el elemento muestra o visualiza lo que hay en su interior, si està en falso no se visualiza nada.'
         //Co
-        at+=''
+        at+='Para utilizar el elemento Item realizamos la declaraciòn del elemento escribiendo en el còdigo QML la palabra Item seguido de las 2 llaves de apertura y cierre.'
         //Cu
-        at+=''
+        at+='Este elemento es muy ùtil para utilizar còmo contenedor de uno o varios elementos internos a los cuales los queremos controlar de manera conjunta.'
         //Ie
-        at+=''
+        at+='Este es el elemento principal de QML de cuàl dependen la mayorìa de los elementos los cuales estàn creados a partir de este elemento Item como base. Hay que recordad que la mayorìa de los elementos QML heredan propiedades y caracterìsticas del elemento Item porque derivan o fueron construidos con èl. Conocer lo màximo posible del elemento Item, nos facilitarà muchìsimo la comprensiòn casi la totalidad de los elementos de QML. Este elemento se llama Item porque es la palabra que se utiliza para hacer referencia a un artìculo, pàrrafo, cosa, objeto o  parte de un texto o escrito por ejemplo en la literatura.'
         xT.at=at.replace(/\n/g, ' ')
     }
 }
