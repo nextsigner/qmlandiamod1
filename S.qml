@@ -30,6 +30,42 @@ Item {
             font.pixelSize: app.fs
             color: app.c2
         }
+        Row{
+            spacing: app.fs*0.5
+            Text{
+                text:'import'
+                font.pixelSize: app.fs
+                color: app.c2
+            }
+            Text{
+                text:'QtQuick'
+                font.pixelSize: app.fs
+                color: app.c2
+                Marco{id:mm1;padding:app.fs*0.1}
+            }
+            Text{
+                id:txtVer
+                text:'1.4'
+                font.pixelSize: app.fs
+                color: app.c2
+                Marco{id:mm2;padding:app.fs*0.1}
+            }
+        }
+    }
+
+    //3
+    Column{
+        id:x3
+        width: r.width-app.fs
+        anchors.centerIn: r
+        opacity: 0.0
+        spacing: app.fs
+        Behavior on opacity{NumberAnimation{duration:500}}
+        Text{
+            text:'<b>Còdigo QML - Elemento Item</b>'
+            font.pixelSize: app.fs
+            color: app.c2
+        }
         Text{
             text:'import QtQuick 2.0\nItem{}\n'
             font.pixelSize: app.fs
@@ -113,8 +149,17 @@ Item {
         interval: 250
         onTriggered: {
             x1.opacity=app.p(0, 6)?1.0:0.0
-            x2.opacity=app.p(6, 30)?1.0:0.0
 
+            x2.opacity=app.p(6, 30)?1.0:0.0
+            mm1.opacity=app.p(10, 13)?1.0:0.0
+            mm2.opacity=app.p(14, 30)?1.0:0.0
+            if(app.p(14, 30)){
+                txtVer.text='2.0'
+            }else if(app.p(16, 30)){
+                txtVer.text='2.5'
+            }else{
+                txtVer.text='1.4'
+            }
         }
     }
 
